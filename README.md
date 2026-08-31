@@ -6,11 +6,11 @@ Each lesson has three phases:
 
 1. **Learn** — the rule, worked examples, and a reteach explanation
 2. **Practice** — handout sentences with instant feedback
-3. **Practice quiz** — 10 shuffled questions, 70% to pass
+3. **Practice quiz** — 10 shuffled questions, 90% to earn mastery
 
-Students who fall short of 70% get reteach content, a review of every missed question, and a freshly shuffled retake. Progress (best score, attempts, mastery) is saved in the browser on the student's own device — no accounts, no server, no data leaves the machine.
+Students who fall short of 90% get reteach content, a review of every missed question, and a freshly shuffled retake. Progress (best score, attempts, mastery) is saved in the browser on the student's own device — no accounts, no server, no data leaves the machine.
 
-At the end of a quiz, students can press **Email my results to my teacher**, which opens a pre-filled Gmail draft (name, lesson, score, and every missed question) addressed to dsmith@byramhills.net and jmarinaro@byramhills.net.
+At the end of a quiz, students pick their teacher from a dropdown (Smith / Marinaro, Salvato, or Vernola) and press **Email my results to my teacher**, which opens a pre-filled Gmail draft with their name, lesson, score, and every missed question.
 
 ## Files
 
@@ -24,13 +24,12 @@ At the end of a quiz, students can press **Email my results to my teacher**, whi
 
 ## Schedule
 
-Lessons unlock on the 1st of their month during the 2026–2027 school year (Lesson 1 in September 2026 through Lesson 10 in June 2027). Once a month has passed, its lesson stays open for the rest of the year.
+All ten lessons are open at all times, so teachers can assign them in any order and on any timeline. The months are labels for the intended 2026–2027 sequence, not locks.
 
-## Changing the schedule or settings
+## Changing settings
 
 Open `index.html` in a text editor and search for:
 
-- `const startYear = 2026` — the school year the lessons are pinned to
-- `dsmith@byramhills.net` — the teacher email recipients
-- `passThreshold` / `quizLength` — pass percentage and questions per quiz
-- `unlockAll` — set the default to `true` to open every lesson regardless of date
+- `teachers()` — the teacher names and email addresses in the dropdown
+- `passThreshold` — the score needed to earn mastery (default 90%)
+- `quizLength` — questions per quiz (default 10)
