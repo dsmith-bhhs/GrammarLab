@@ -5,10 +5,10 @@ A self-contained web app for Grade 9 Edit Notes: one grammar and punctuation les
 Each lesson has three phases:
 
 1. **Learn** — the rule, worked examples, and a reteach explanation
-2. **Practice** — handout sentences with instant feedback
-3. **Practice quiz** — 10 shuffled questions, 90% to earn mastery
+2. **Practice** — handout sentences, then additional practice sentences, all with instant feedback
+3. **Practice quiz** — 10 sentences drawn from a pool of 30 per lesson that never appear in practice. Each retake is a completely different set of 10; after three attempts the pool refreshes., 90% to earn mastery
 
-Students who fall short of 90% get reteach content, a review of every missed question, and a freshly shuffled retake. Progress (best score, attempts, mastery) is saved in the browser on the student's own device — no accounts, no server, no data leaves the machine.
+Students who fall short of 90% get reteach content, a review of every missed question, and a retake with ten new sentences. Progress (best score, attempts, mastery) is saved in the browser on the student's own device — no accounts, no server, no data leaves the machine.
 
 At the end of a quiz, students pick their teacher from a dropdown (Smith / Marinaro, Salvato, or Vernola) and press **Email my results to my teacher**, which opens a pre-filled Gmail draft with their name, lesson, score, and every missed question.
 
